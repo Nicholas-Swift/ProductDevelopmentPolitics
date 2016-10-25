@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Product Development Politics.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="DESCRIPTION HERE" />
+		<meta name="keywords" content="KEY, WORDS, HERE" />
+		<meta name="author" content="Nicholas Swift" />
+
+		<!-- Style Sheets -->
+		<link href="main.css" rel="stylesheet">
+
+	    <style>
+	      	#map {
+				height: calc(100vh - 4.5em);
+				width: 100%;
+	        }
+	    </style>
+	</head>
+
+  <body>
+
+  	<div class="search-nav">
+		<h1>Ward Search</h1>
+		<span id="inputBox">
+			<input id="searchTextField" name="email" type="text" placeholder="Enter your address and find a ward near you..." autocomplete="on">
+		</span>
+		<input name="submit" type="submit" value="Search Wards">
+		<input name="map" type="submit" value="Map Search">
+	</div>
+    <div id="map"></div>
+
+    <script type="text/javascript">
+	    function initMap() {
+	        var uluru = {lat: -25.731, lng: 28.218};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	        	zoom: 7,  
+	        	center: uluru
+	    	});
+	       	var options = { 
+	            types: ['(cities)'],
+	            componentRestrictions: {country: "south africa"}
+				};
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      
+	     	var input = document.getElementById('searchTextField');
+	    	var autocomplete = new google.maps.places.Autocomplete(input);
+		}	
+	        
+	 	google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYehaRd52hQNiohbE6reUYZXp_jJX12XU&libraries=places&callback=initMap">
+    </script>
+
+  </body>
+</html>
+
