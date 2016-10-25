@@ -1,0 +1,183 @@
+
+html {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+
+	font-family: medium-content-serif-font, Georgia, "Cambria", "Times New Roman", Times, serif;
+}
+
+body {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: medium-content-serif-font, Georgia, "Cambria", "Times New Roman", Times, serif;
+	font-weight: 300;
+}
+
+h1 {
+
+	float: left;
+	font-size: 1.5em;
+	padding-right: 1em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 0.9em;
+}
+
+/* Search Nav */
+
+.search-nav {
+	padding: 0.2em;
+	padding-top: 0.4em;
+	background-color: #eee;
+	-webkit-box-shadow:0px 1px 0px #ccc;
+	-moz-box-shadow:0px 1px 0px #ccc;
+	box-shadow:0px 1px 0px #ccc;
+}
+
+.search-nav h1 {
+	padding-left: 0.3em;
+	padding-right: 0.15em;
+	/*background-color: red;*/
+}
+
+.search-nav input[type="text"] {
+	outline: none;
+	box-shadow: none;
+	color: #333;
+	margin: 0.5em;
+	font-size: 0.8em;
+	padding: 1em;
+	width: 580px;
+	height: 15px;
+}
+
+.search-nav input[type="text"]:hover {
+	outline: none;
+	box-shadow: none;
+	border-color: solid 1px red;
+}
+
+.search-nav input[type="text"]:selected {
+	outline: none;
+	box-shadow: none;
+	border-color: red;
+}
+
+.search-nav input[type=submit] {
+	outline: none;
+	border: solid 1px #ddd;
+	background-color: #fefefe;
+	color: black;
+	margin: 0.5em;
+	line-height: 1em;
+	font-size: 0.8em;
+	width: calc(100px + 2em);
+	height: calc(20px + 2em);
+	cursor:pointer;
+}
+
+.search-nav input[type=submit]:hover {
+	outline: none;
+	border: solid 1px #bbb;
+	background-color: #fcfcfc;
+}
+
+.search-nav input[type=submit]:active {
+	outline: none;
+	border: solid 1px #4885ed;
+	background-color: #fcfcfc;
+}
+
+/* Party Nav */
+
+.party-nav {
+	background-color: white;
+	padding-left: calc(10em - 2em);
+	height: 60px;
+	-webkit-box-shadow:0px 1px 0px #eee;
+	-moz-box-shadow:0px 1px 0px #eee;
+	box-shadow:0px 1px 0px #eee;
+}
+
+.party-nav a {
+	font-family: Arial;
+	font-size: 0.85em;
+	line-height: 60px;
+	padding-right: 2.5em;
+	padding-left: 2.5em;
+	color: #666;
+	text-decoration: none;
+}
+
+.party-nav a:hover {
+	color: #333;
+}
+
+.party-nav a:active {
+	color: #4885ed;
+}
+
+/* Ward Info */
+
+.ward-info {
+	margin-left: 10em;
+	max-width: 600px;
+}
+
+.ward-info .ward {
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+.ward-info .ward a {
+	color: #4885ed;
+	text-decoration: none;
+}
+
+.ward-info .ward a:hover {
+	text-decoration: underline;
+}
+
+.ward-info .ward a:active {
+	color: #2663cb;
+}
+
+/* Footer */
+
+.footer {
+	padding: 0.1em;
+	padding-left: 2em;
+	background-color: #eee;
+	-webkit-box-shadow:0px -1px 0px #ddd;
+	-moz-box-shadow:0px -1px 0px #ddd;
+	box-shadow:0px -1px 0px #ddd;
+	height: 3.5em;
+}
+
+.footer .left {
+	float: left;
+}
+
+.footer .right {
+	float: right;
+}
+
+.footer p {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-right: 2em;
+	font-family: Arial;
+	font-size: 0.85em;
+	display: inline-block;
+}
