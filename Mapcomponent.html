@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Map Component</title>
+    <style>
+      #map {
+        height: 400px;
+        width: 80%;
+       }
+        .title {
+            border-bottom: 1px solid #d5d5d5;
+            padding-bottom: 20px;
+            font-size: 40px;
+            font-family:'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: 300;
+            line-height: 26px;
+            margin-bottom: 12.5px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 20px;
+            color: cornflowerblue;     
+        }
+        #inputBox {
+/*            url for my json file. */
+        }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Ward Councillor Map</h1>
+    <div id="map"></div>
+    <div id="inputBox">
+        <input id= "searchTextField" type="text" size="50" placeholder="Type your address or click on the map ." autocomplete="on"> 
+    </div>
+    <script type="text/javascript">
+
+      function initMap() {
+        var uluru = {lat: -25.731, lng: 28.218};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,  
+          center: uluru
+        });
+           var options = { 
+            types: ['(cities)'],
+            componentRestrictions: {country: "south africa"}
+ };
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+          
+          var input = document.getElementById('searchTextField');
+          var autocomplete = new google.maps.places.Autocomplete(input);
+          
+      }
+        
+ google.maps.event.addDomListener(window, 'load', initMap);
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYehaRd52hQNiohbE6reUYZXp_jJX12XU&libraries=places&callback=initMap">
+    </script>
+  </body>
+</html>
+
+<!-- so a user will input their address or their location by clicking on the map component button in the corner of the search engine. Otherwise, if they dont have an address they should have the option to put a pin on the map and get the same results. the components that would be compared here, are the locations 
+
+- make a for loop first of all to obtain all the data and save it into a model object. Then take the coordinates saved from the different -->
