@@ -104,6 +104,7 @@ h3 {
 
 .party-nav {
 	background-color: white;
+	padding: 0;
 	padding-left: calc(10em - 2em);
 	height: 60px;
 	-webkit-box-shadow:0px 1px 0px #eee;
@@ -115,6 +116,7 @@ h3 {
 	font-family: Arial;
 	font-size: 0.85em;
 	line-height: 60px;
+	padding: 0;
 	padding-right: 2.5em;
 	padding-left: 2.5em;
 	color: #666;
