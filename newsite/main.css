@@ -87,6 +87,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer */
 
 .footer {
+	position: absolute;
+	width: calc(100% - 2.1em);
+	top: calc(100vh - 3.5em - 0.2em);
 	padding: 0.1em;
 	padding-left: 2em;
 	background-color: #eee;
@@ -111,5 +114,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Arial;
 	font-size: 0.85em;
 	display: inline-block;
+}
+
+.footer a {
+	color: #666;
+}
+
+.footer a:hover {
+	color: #4885ed;
+}
+
+.footer a:active {
+	color: #2663cb;
 }
 

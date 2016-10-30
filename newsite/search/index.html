@@ -17,10 +17,13 @@
 	<body>
 
 		<div class="search-nav">
-			<h1>Ward Search</h1>
-			<input id="searchTextField" name="email" type="text" placeholder="Enter your address and find a ward near you...">
-			<input name="submit" type="submit" value="Search Wards">
-			<input name="map" type="submit" value="Map Search">
+			<a href="../index.html"><h1>Ward Search</h1></a>
+				<form action="./index.html" method="GET">
+				<input id="searchTextField" name="search" type="text" placeholder="Enter your address and find a ward near you...">
+				<input name="submit" type="submit" value="Search Wards">
+				<input name="map" type="submit" value="Map Search">
+				<input type="hidden" />
+			</form>
 		</div>
 
 		<div class="party-nav">
@@ -80,6 +83,14 @@
 			</div> -->
 		</div>
 
+		<div class="addWard">
+
+			<h2>Are you part of a ward you don't see here?</h2>
+			<p>Ward Search is constantly growing and looking for new wards to add. Add your ward so that others can find you easily and join your cause.</p>
+			<input id="addWardButton" name="addWardButton" type="submit" value="Add Ward">
+
+		</div>
+
 		<div class="footer">
 
 			<div class="left">
@@ -93,8 +104,89 @@
 			</div>
 		</div>
 
+		<div id="addWardContainer" class="addWardContainer hidden-true">
+			<div id="addWardForm" class="addWardForm">
+				<h2>Add A Ward</h2>
+				<p>Once we verify your ward, it will be added.</p>
+
+				<form action="code/contact.php" method="post" name="contact-form" class="fadeInBlock">
+		        	<p>
+		            <input name="name" type="text" placeholder="Ward Number">
+		            </p>
+
+		            <p>
+		            <input name="name" type="text" placeholder="Party Affiliation">
+		            </p>
+
+		            <p class="emailbox">
+		            <input name="email" type="text" placeholder="Address">
+		            </p>
+
+		            <p class="emailbox">
+		            <input name="email" type="text" placeholder="Councillor Phone Number">
+		            </p>
+
+		            <p class="emailbox">
+		            <input name="email" type="text" placeholder="Councillor Email">
+		            </p>
+
+		            <p class="emailmessage">
+		            <textarea name="message" placeholder="Ward Description"></textarea>
+		            </p>
+
+		            <p class="emailbuttons">
+		            <input name="submit" type="submit" value="Submit">
+		            </p>
+		        </form>
+			</div>
+		</div>
+
 	    <div id="map"></div>
 
+	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	    <!-- User Query Parameters JavaScrip -->
+	    <script>
+
+	    	function getParameterByName(name, url) {
+			    if (!url) {
+			    	url = window.location.href;
+			    }
+			    name = name.replace(/[\[\]]/g, "\\$&");
+			    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+			    	results = regex.exec(url);
+			    if (!results) return null;
+			    if (!results[2]) return '';
+			    return decodeURIComponent(results[2].replace(/\+/g, " "));
+			}
+
+			var search = getParameterByName('search');
+			var input = document.getElementById('searchTextField');
+			input.value = search
+	    </script>
+
+	    <!-- Add Ward JavaScript -->
+	    <script>
+
+	    	$("#addWardButton").click(function() {
+	    		console.log("HELLO THERE IT'S ME");
+	    		$("#addWardContainer").removeClass("hidden-true");
+	    		$("#addWardContainer").animate({opacity:1},200);
+	    	});
+
+	    	$("#addWardForm").click(function() {
+    			return false;
+    		});
+
+	    	$("#addWardContainer").click(function() {
+	    		$("#addWardContainer").animate({opacity:0},200, function() {
+	    			$("#addWardContainer").addClass("hidden-true");
+	    		});
+	    	});
+
+	    </script>
+
+	    <!-- Ward Template -->
 	    <script id="project-template" type="text/x-handlebars-template">
 	    	<div class="ward">
 				<a href="lol"><h2>{{title}}</h2></a>
@@ -131,7 +223,7 @@
 	        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYehaRd52hQNiohbE6reUYZXp_jJX12XU&libraries=places&callback=initMap">
 	    </script>
 
-	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 	    <script src="../js/handlebars-v4.0.5.js"></script>
 	    <script src="../js/data.js"></script>
 	    <script src="../js/main.js"></script>

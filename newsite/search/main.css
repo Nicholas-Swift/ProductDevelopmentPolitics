@@ -134,8 +134,9 @@ h3 {
 /* Ward Info */
 
 .ward-info {
+	display: inline-block;
 	margin-left: 10em;
-	max-width: 600px;
+	max-width: 500px;
 }
 
 .ward-info .ward {
@@ -154,6 +155,162 @@ h3 {
 
 .ward-info .ward a:active {
 	color: #2663cb;
+}
+
+/*Add Ward*/
+
+.addWard {
+	text-align: left;
+	display: inline-block;
+	float: right;
+	max-width: calc(500px - 2em);
+	padding: 2em;
+	margin-top: 2em;
+	margin-right: 6em;
+	background-color: #fefefe;
+	border: solid 1px #ddd;
+}
+
+.addWard h2 {
+	padding-bottom: 0.5em;
+	/*text-align: center;*/
+}
+
+.addWard p {
+	padding-bottom: 0.5em;
+	color: #333;
+}
+
+.addWard input[type=submit] {
+	padding: 0;
+	margin-left: -10px;
+}
+
+.addWard input[type=submit] {
+	outline: none;
+	border: solid 1px #ddd;
+	background-color: #fefefe;
+	color: black;
+	margin: 0.5em;
+	line-height: 1em;
+	font-size: 0.8em;
+	width: calc(100px + 2em);
+	height: calc(20px + 2em);
+	cursor:pointer;
+}
+
+.addWard input[type=submit]:hover {
+	outline: none;
+	border: solid 1px #bbb;
+	background-color: #fcfcfc;
+}
+
+.addWard input[type=submit]:active {
+	outline: none;
+	border: solid 1px #4885ed;
+	background-color: #fcfcfc;
+}
+
+/*Add Ward Form*/
+
+.addWardContainer {
+	/*visibility: hidden;*/
+	opacity: 0;
+	background: rgba(1, 1, 1, 0.65);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.addWardForm {
+	padding-top: 2em;
+	padding-bottom: 2em;
+
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: fixed;
+	text-align: center;
+	background-color: #fff;
+	width: 40%;
+
+	border-radius: 3px;
+
+	-moz-box-shadow: 0 0 6px #222;
+	-webkit-box-shadow: 0 0 6px #222;
+	box-shadow: 0 0 6px #222;
+}
+
+.addWardForm form input {
+	font-family: 'Crimson Text', serif;
+	color: #333;
+	margin: 0.2em;
+	font-size: 0.9em;
+	padding: 1em;
+	width: 400px;
+	height: 10px;
+
+	outline: none;
+	box-shadow: none;
+	border: 1px solid #ccc;
+
+	width: 80%;
+	max-width: 400px;
+}
+
+.addWardForm form input[type="text"]:focus {
+	border-color: #4885ed;
+}
+
+.addWardForm form textarea {
+	font-family: 'Crimson Text', serif;
+	color: #333;
+	margin: 0.5em;
+	line-height: 1.5em;
+	font-size: 0.9em;
+	border: 1px solid #ccc;
+	width: 400px;
+	padding: 1em;
+	height: 100px;
+
+	outline: none;
+	box-shadow: none;
+
+	width: 80%;
+	max-width: 400px;
+}
+
+.addWardForm form textarea:focus {
+	border-color: #4885ed;
+}
+
+.addWardForm form input[type=submit] {
+	border: solid 1px #ccc;
+	background-color: white;
+	color: black;
+	margin: 0.5em;
+	line-height: 1em;
+	font-size: 0.9em;
+	width: calc(400px + 2em);
+	height: calc(20px + 2em);
+	cursor:pointer;
+
+	width: calc(80% + 2em);
+	max-width: calc(400px + 2em);
+}
+
+.addWardForm form input[type=submit]:hover {
+	outline: none;
+	border: solid 1px #bbb;
+	background-color: #fefefe;
+}
+
+.addWardForm form input[type=submit]:active {
+	outline: none;
+	border: solid 1px #4885ed;
+	background-color: #fdfdfd;
 }
 
 /* Footer */
@@ -195,4 +352,10 @@ h3 {
 
 .footer a:active {
 	color: #2663cb;
+}
+
+/*Styles*/
+
+.hidden-true {
+	visibility: hidden;
 }
