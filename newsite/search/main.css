@@ -26,6 +26,7 @@ h1 {
 }
 
 h2 {
+	color: #222;
 	font-size: 1.2em;
 }
 
@@ -140,6 +141,7 @@ h3 {
 }
 
 .ward-info .ward {
+	padding-bottom: 1em;
 	margin-top: 2em;
 	margin-bottom: 3em;
 }

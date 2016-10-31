@@ -18,11 +18,11 @@
 
 		<div class="search-nav">
 			<a href="../index.html"><h1>Ward Search</h1></a>
-				<form action="./index.html" method="GET">
-				<input id="searchTextField" name="search" type="text" placeholder="Enter your address and find a ward near you...">
-				<input name="submit" type="submit" value="Search Wards">
-				<input name="map" type="submit" value="Map Search">
-				<input type="hidden" />
+				<form>
+					<input id="searchTextField" name="search" type="text" placeholder="Enter your address and find a ward near you...">
+					<input name="submit" type="submit" formaction="./index.html" method="GET" value="Search Wards">
+			        <input name="map" type="submit" formaction="../map/index.html" method="GET" value="Map Search">
+					<input type="hidden" />
 			</form>
 		</div>
 
@@ -109,33 +109,38 @@
 				<h2>Add A Ward</h2>
 				<p>Once we verify your ward, it will be added.</p>
 
-				<form action="code/contact.php" method="post" name="contact-form" class="fadeInBlock">
+				<form name="contact-form" class="fadeInBlock">
+
+					<p>
+				    <input id="formWardNumber" name="wardNumber" type="text" placeholder="Ward Number">
+				    </p>
+
+				    <p>
+				    <input id="formProvince" name="Province" type="text" placeholder="Province">
+				    </p>
+
+				    <p>
+				    <input id="formPhysicalAddress" name="Physical Address" type="text" placeholder="Physical Address">
+				    </p>
+
 		        	<p>
-		            <input name="name" type="text" placeholder="Ward Number">
+		            <input id="formFirstName" name="firstName" type="text" placeholder="Ward Councillor First Name">
 		            </p>
 
 		            <p>
-		            <input name="name" type="text" placeholder="Party Affiliation">
+		            <input id="formLastName" name="lastName" type="text" placeholder="Ward Councillor Last Name">
+		            </p>
+
+		            <p>
+		            <input id="formPhoneNumber" name="phoneNumber" type="text" placeholder="Ward Councillor Phone Number">
 		            </p>
 
 		            <p class="emailbox">
-		            <input name="email" type="text" placeholder="Address">
-		            </p>
-
-		            <p class="emailbox">
-		            <input name="email" type="text" placeholder="Councillor Phone Number">
-		            </p>
-
-		            <p class="emailbox">
-		            <input name="email" type="text" placeholder="Councillor Email">
-		            </p>
-
-		            <p class="emailmessage">
-		            <textarea name="message" placeholder="Ward Description"></textarea>
+		            <input id="formEmailAddress" name="emailAddress" type="text" placeholder="Ward Councillor Email Address">
 		            </p>
 
 		            <p class="emailbuttons">
-		            <input name="submit" type="submit" value="Submit">
+		            <input id="submitWardButton" name="submit" type="submit" value="Submit">
 		            </p>
 		        </form>
 			</div>
@@ -145,7 +150,7 @@
 
 	    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-	    <!-- User Query Parameters JavaScrip -->
+	    <!-- User Query Parameters JavaScript -->
 	    <script>
 
 	    	function getParameterByName(name, url) {
@@ -163,13 +168,38 @@
 			var search = getParameterByName('search');
 			var input = document.getElementById('searchTextField');
 			input.value = search
+
+		 	$.ajax({
+	            type: "GET", //rest Type
+	            dataType: 'json', //mispelled
+	            url: "http://127.0.0.1:5000/wards",
+	            async: true,
+	            contentType: "application/json; charset=utf-8",
+	            success: function (data) {
+	                // console.log(data);
+
+	                var source = $("#project-template").html();
+	                var projectTemplate = Handlebars.compile(source);
+
+	                // Loop through data and display content 
+	                var content = "";
+
+	                for (var i in data["message"]) {
+	                	// console.log(i);
+	                	content += projectTemplate(data["message"][i])
+	                }
+
+	                // Add the navbar content to the page
+	                $("#ward-info").html(content);
+	            }
+			});
+
 	    </script>
 
-	    <!-- Add Ward JavaScript -->
+	    <!-- Add Ward Front End JavaScript -->
 	    <script>
 
 	    	$("#addWardButton").click(function() {
-	    		console.log("HELLO THERE IT'S ME");
 	    		$("#addWardContainer").removeClass("hidden-true");
 	    		$("#addWardContainer").animate({opacity:1},200);
 	    	});
@@ -186,13 +216,63 @@
 
 	    </script>
 
+	    <!-- Add Ward Backend Server -->
+	    <script>
+
+	    	$("#submitWardButton").click(function() {
+
+	    		var dataToSend = JSON.stringify({
+		  			// "firstName": "Nicholas",
+	      //       	"lastName": "Swift",
+	      //       	"phoneNumber": "123 456 7891",
+	      //       	"emailAddress": "ward@wardnames.com",
+	      //       	"wardNumber": "69",
+	      //       	"Province": "California",
+	      //       	"PhysicalAddress": "Houghton Drive, Johannesburg, South Africa"
+
+	     		 	"firstName": $('#formFirstName').val(),
+	            	"lastName": $('#formLastName').val(),
+	            	"phoneNumber": $('#formPhoneNumber').val(),
+	            	"emailAddress": $('#formEmailAddress').val(),
+	            	"wardNumber": $('#formWardNumber').val(),
+	            	"Province": $('#formProvince').val(),
+	            	"PhysicalAddress": $('#formPhysicalAddress').val()
+		  		});
+
+		  		console.log(dataToSend);
+
+			 	$.ajax({
+		            type: "POST", //rest Type
+		            dataType: 'json', //mispelled
+		            url: "http://127.0.0.1:5000/wards",
+		            async: true,
+		            contentType: "application/json",
+		            data: dataToSend,
+		            success: function (data) {
+		            	console.log(dataToSend);
+		                console.log(data);
+		            }
+				});
+
+				$("#addWardContainer").animate({opacity:0},200, function() {
+			 			$("#addWardContainer").addClass("hidden-true");
+			 		});
+
+	    	});
+
+	    </script>
+
 	    <!-- Ward Template -->
 	    <script id="project-template" type="text/x-handlebars-template">
-	    	<div class="ward">
-				<a href="lol"><h2>{{title}}</h2></a>
-				<h3>{{info}}</h3>
-				<p>{{body}}</p>
+
+			<div class="ward">
+				<h2>Ward {{wardNumber}}</h2>
+				<h3><em>{{Province}} -- {{PhysicalAddress}}</em></h3>
+				<p>Councillor: {{firstName}} {{lastName}} </p>
+				<p>Email: {{emailAddress}}</p>
+				<p>Phone #: {{phoneNumber}}</p>
 			</div>
+
 	    </script>
 
 	    <!-- Google Maps -->
@@ -214,7 +294,7 @@
 		      
 		     	var input = document.getElementById('searchTextField');
 		    	var autocomplete = new google.maps.places.Autocomplete(input);
-			}	
+			}
 		        
 		 	google.maps.event.addDomListener(window, 'load', initMap);
 	    </script>
@@ -225,8 +305,8 @@
 
 	    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
 	    <script src="../js/handlebars-v4.0.5.js"></script>
-	    <script src="../js/data.js"></script>
-	    <script src="../js/main.js"></script>
+	    <!-- <script src="../js/data.js"></script>
+	    <script src="../js/main.js"></script> -->
 
 	</body>
 

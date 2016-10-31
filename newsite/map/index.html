@@ -24,14 +24,39 @@
   <body>
 
   	<div class="search-nav">
-		<h1>Ward Search</h1>
-		<span id="inputBox">
-			<input id="searchTextField" name="email" type="text" placeholder="Enter your address and find a ward near you..." autocomplete="on">
-		</span>
-		<input name="submit" type="submit" value="Search Wards">
-		<input name="map" type="submit" value="Map Search">
+		<a href="../index.html"><h1>Ward Search</h1></a>
+		<form>
+			<span id="inputBox">
+				<input id="searchTextField" name="search" type="text" placeholder="Enter your address and find a ward near you..." autocomplete="on">
+			</span>
+			<input name="submit" type="submit" formaction="../search/index.html" method="GET" value="Search Wards">
+	        <input name="map" type="submit" formaction="../map/index.html" method="GET" value="Map Search">
+			<input type="hidden" />
+		</form>
 	</div>
     <div id="map"></div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- User Query Parameters JavaScrip -->
+    <script>
+
+    	function getParameterByName(name, url) {
+		    if (!url) {
+		    	url = window.location.href;
+		    }
+		    name = name.replace(/[\[\]]/g, "\\$&");
+		    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		    	results = regex.exec(url);
+		    if (!results) return null;
+		    if (!results[2]) return '';
+		    return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+
+		var search = getParameterByName('search');
+		var input = document.getElementById('searchTextField');
+		input.value = search
+    </script>
 
     <script type="text/javascript">
 	    function initMap() {
