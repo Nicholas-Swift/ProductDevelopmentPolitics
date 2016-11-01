@@ -1,0 +1,716 @@
+{
+   "politicalParties":{
+      "ANC":[
+         {
+            "id":"1",
+            "firstName":"Nomsa",
+            "lastName":"Hlomendlini",
+            "phoneNumber":"0823082762",
+            "emailAddress":"nomsahlo@joburg.org.za",
+            "wardNumber":"101",
+            "Province":"Gauteng",
+            "Physical Address": "205 Canford Avenue, Johannesburg South, 2091, South Africa"
+         },
+         {
+            "id":"2",
+            "firstName":"Titus",
+            "lastName":"Mabotja",
+            "phoneNumber":"072 255 7911",
+            "emailAddress":"titusm@joburg.org.za",
+            "wardNumber":"121",
+            "Province":"Gauteng",
+            "Physical Address": "25 Margaret Street, Johannesburg South, 2091, South Africa"
+         },
+         {
+            "id":"3",
+            "firstName":"Joe",
+            "lastName":"Mahlanga",
+            "phoneNumber":" 082 576 8702 ",
+            "emailAddress":"joemahlanga@joburg.org.za",
+            "wardNumber":"122",
+            "Province":"Gauteng",
+            "Physical Address": "Fourways, Sandton, Gauteng, South Africa"
+         },
+         {
+            "id":"4",
+            "firstName":"Francina",
+            "lastName":"Mashao",
+            "phoneNumber":"084 291 6382",
+            "emailAddress":"francinamas@joburg.org.za",
+            "wardNumber":"59",
+            "Province":"Gauteng",
+            "Physical Address": "Braamfontein, Johannesburg, Gauteng, South Africa"
+         },
+         {
+            "id":"5",
+            "firstName":"Monde",
+            "lastName":"Mbingeleli",
+            "phoneNumber":" 082 464 2946 ",
+            "emailAddress":"Monde.mbingeleli@yahoo.com",
+            "wardNumber":"116",
+            "Province":"Gauteng",
+            "Physical Address": "Parktown, Johannesburg, Gauteng, South Africa"
+         },
+         {
+            "id":"6",
+            "firstName":"Paul",
+            "lastName":"Molutsi",
+            "phoneNumber":"082 702 3931",
+            "emailAddress":"paulmol@joburg.org.za",
+            "wardNumber":"120",
+            "Province":"Gauteng",
+            "Physical Address": "Houghton Drive, Johannesburg, South Africa"
+         },
+         {
+            "id":"7",
+            "firstName":"Abraham",
+            "lastName":"Du Plooy",
+            "phoneNumber":"0828210075",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"101",
+            "Province":"Limpopo",
+            "Physical Address": "Aqua Park, Tzaneen, South Africa"
+         },
+         {
+            "id":"8",
+            "firstName":"Violet",
+            "lastName":"Mashapa",
+            "phoneNumber":"0782353689",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"60",
+            "Province":"Limpopo",
+            "Physical Address": "Nkowankowa, Limpopo, South Africa"
+         },
+         {
+            "id":"9",
+            "firstName":"AJ",
+            "lastName":"Mukhaha",
+            "phoneNumber":"0837019103",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"75",
+            "Province":"Limpopo",
+            "Physical Address": "59 Dorp Street, Polokwane, 0700, South Africa"
+         },
+         {
+            "id":"10",
+            "firstName":"Ruth Tlhamanang",
+            "lastName":"Makhubela",
+            "phoneNumber":"0794995333",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"89",
+            "Province":"Limpopo",
+            "Physical Address": "Musina, South Africa"
+         },
+         {
+            "id":"11",
+            "firstName":"Rachel",
+            "lastName":"Malange",
+            "phoneNumber":"0737914065",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"14",
+            "Province":"Limpopo",
+            "Physical Address": "Ga-Masemola, South Africa"
+         },
+         {
+            "id":"12",
+            "firstName":"Matlatso Rufus",
+            "lastName":"Selepe",
+            "phoneNumber":"082 308 2289",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"54",
+            "Province":"Limpopo",
+            "Physical Address": "Jane Furse, Limpopo, South Africa"
+         },
+         {
+            "id":"13",
+            "firstName":"A.L",
+            "lastName":"Siphuma",
+            "phoneNumber":"0795149736",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"40",
+            "Province":"Limpopo",
+            "Physical Address": "Glen Cowie, Limpopo, South Africa"
+         },
+         {
+            "id":"14",
+            "firstName":"Makobela Setumo",
+            "lastName":"Rober",
+            "phoneNumber":"0782886218",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"19",
+            "Province":"Limpopo",
+            "Physical Address": "5 Munnik Avenue, Polokwane, 0699, South Africa"
+         },
+         {
+            "id":"15",
+            "firstName":"Joe",
+            "lastName":"MAHLANGA",
+            "phoneNumber":" 0825768702",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"122",
+            "Province":"Limpopo",
+            "Physical Address": "Thornhill Village, South Africa"
+         },
+         {
+            "id":"16",
+            "firstName":"Ramoba Mahlodi",
+            "lastName":"Rahab",
+            "phoneNumber":"0735720525",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"77",
+            "Province":"Limpopo",
+            "Physical Address": "Lebowakgomo-A, Limpopo, South Africa"
+         },
+         {
+            "id":"17",
+            "firstName":"Setwaba Dikeledi",
+            "lastName":"Shirley",
+            "phoneNumber":"0764415511",
+            "emailAddress":"example@limpopo.org.za",
+            "wardNumber":"50",
+            "Province":"Limpopo",
+            "Physical Address": "Mokopane, Limpopo, South Africa"
+         },
+         {
+            "id":"18",
+            "firstName":"Simpiwe",
+            "lastName":"Nonkeyizana",
+            "phoneNumber":"0730288287",
+            "emailAddress":"Simpiwe.Nonkeyizana@capetown.gov.za",
+            "wardNumber":"46",
+            "Province":"Cape Town",
+            "Physical Address": "Claremont, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"19",
+            "firstName":"Ntomboxolo",
+            "lastName":"Kopman",
+            "phoneNumber":"0827932068",
+            "emailAddress":"Ntomboxolo.Kopman@capetown.gov.za",
+            "wardNumber":"71",
+            "Province":"Cape Town",
+            "Physical Address": "Newlands, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"20",
+            "firstName":"Sithembiso",
+            "lastName":"Mzobe",
+            "phoneNumber":"0784978606",
+            "emailAddress":"sithembiso.mzobe@capetown.gov.za",
+            "wardNumber":"126",
+            "Province":"Cape Town",
+            "Physical Address": "Claremont, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"21",
+            "firstName":"Fikiswa",
+            "lastName":"Nkunzana",
+            "phoneNumber":" 0734317211 ",
+            "emailAddress":"Fikiswa.Nkunzana@capetown.gov.za",
+            "wardNumber":"36",
+            "Province":"Cape Town",
+            "Physical Address": "Constantia Heights, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"22",
+            "firstName":"Sharon",
+            "lastName":"Manata",
+            "phoneNumber":"0763809696",
+            "emailAddress":"sharon.manata@capetown.gov.za",
+            "wardNumber":"39",
+            "Province":"Cape Town",
+            "Physical Address": "The Constantia Village, Constantia Main Road, Cape Town, South Africa"
+         },
+         {
+            "id":"23",
+            "firstName":"Jongidumo",
+            "lastName":"Maxheke",
+            "phoneNumber":"0736436784",
+            "emailAddress":"Jongidumo.Maxheke@capetown.gov.za",
+            "wardNumber":"111",
+            "Province":"Cape Town",
+            "Physical Address": "Philippi, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"24",
+            "firstName":"Monde",
+            "lastName":"Nqulwana",
+            "phoneNumber":" 0719899725",
+            "emailAddress":"Monde.Nqulwana@capetown.gov.za",
+            "wardNumber":"68",
+            "Province":"Cape Town",
+            "Physical Address": "Khayelitsha, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"25",
+            "firstName":"Andile",
+            "lastName":"Lili",
+            "phoneNumber":"0766308492",
+            "emailAddress":"andile.lile@capetown.gov.za",
+            "wardNumber":"97",
+            "Province":"Cape Town",
+            "Physical Address": "Stellenbosch, Western Cape, South Africa"
+         },
+         {
+            "id":"26",
+            "firstName":"Bongile",
+            "lastName":"Ngcani",
+            "phoneNumber":"0832387394",
+            "emailAddress":"bongile.ngcani@capetown.gov.za",
+            "wardNumber":"88",
+            "Province":"Cape Town",
+            "Physical Address": "Kraaifontein, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"27",
+            "firstName":"Xolani",
+            "lastName":"Ndongeni",
+            "phoneNumber":" 0722902153 ",
+            "emailAddress":"Xolani.Ndongeni@capetown.gov.za",
+            "wardNumber":"93",
+            "Province":"Cape Town",
+            "Physical Address": "Parklands, Cape Town, Western Cape, South Africa"
+         },
+         {
+            "id":"28",
+            "firstName":"W M",
+            "lastName":"Chuene",
+            "phoneNumber":" 0714346764",
+            "emailAddress":"chuenem@joburg.org.za",
+            "wardNumber":"101",
+            "Province":"Gauteng",
+            "Physical Address": "Lynnwood, Pretoria, Gauteng, South Africa"
+         },
+         {
+            "id":"29",
+            "firstName":"J M",
+            "lastName":"Coplan",
+            "phoneNumber":" 0824909767",
+            "emailAddress":"Jcoplan@joburg.org.za",
+            "wardNumber":"163",
+            "Province":"Gauteng",
+            "Physical Address": "Garsfontein, Pretoria, Gauteng, South Africa"
+         },
+         {
+            "id":"30",
+            "firstName":"M",
+            "lastName":"Dokolwane",
+            "phoneNumber":" 0731803893",
+            "emailAddress":"example@joburg.org.za",
+            "wardNumber":"122",
+            "Province":"Gauteng",
+            "Physical Address": "Centurion, Gauteng, South Africa"
+         },
+         {
+            "id":"31",
+            "firstName":"Zodwa Lizzy",
+            "lastName":"Kgame",
+            "phoneNumber":" 0721087160 ",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"14",
+            "Province":"North West",
+            "Physical Address": "Mogwase, North West, South Africa"
+         },
+         {
+            "id":"32",
+            "firstName":"OREPA GLADYS",
+            "lastName":"KGARIMETSA",
+            "phoneNumber":" 073 240 8348",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"31",
+            "Province":"North West",
+            "Physical Address": "Mahikeng, North West, South Africa"
+         },
+         {
+            "id":"33",
+            "firstName":"XOLILE VICTOR",
+            "lastName":"KHESWA",
+            "phoneNumber":"072 050 8337",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"163",
+            "Province":"North West",
+            "Physical Address": "Brits, North West, South Africa"
+         },
+         {
+            "id":"34",
+            "firstName":"KHUTSAFALO MITA",
+            "lastName":" KHUNOU",
+            "phoneNumber":" 082 307 9731",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"22",
+            "Province":"North West",
+            "Physical Address": "Hartbeespoort, North West, South Africa"
+         },
+         {
+            "id":"35",
+            "firstName":"HARRY KGOTHATSO",
+            "lastName":"KODONGO",
+            "phoneNumber":" 079 591 4306 ",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"19",
+            "Province":"North West",
+            "Physical Address": "Lichtenburg, North West, South Africa"
+         },
+         {
+            "id":"36",
+            "firstName":"Mpho ",
+            "lastName":"Khunou",
+            "phoneNumber":" 014 590 3004 ",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"101",
+            "Province":"North West",
+            "Physical Address": "Moses Kotane, North West, South Africa"
+         },
+         {
+            "id":"37",
+            "firstName":"Mr Jonas ",
+            "lastName":"Lehari",
+            "phoneNumber":"012 716 9998",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"163",
+            "Province":"North West",
+            "Physical Address": "Ventersdorp, North West, South Africa"
+         },
+         {
+            "id":"38",
+            "firstName":"M",
+            "lastName":"Dokolwane",
+            "phoneNumber":" 0731803893",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"122",
+            "Province":"North West",
+            "Physical Address": "Moretele, North West, South Africa"
+         },
+         {
+            "id":"39",
+            "firstName":"M",
+            "lastName":"Dokolwane",
+            "phoneNumber":" 0731803893",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"122",
+            "Province":"North West",
+            "Physical Address": "Madibeng, North West, South Africa"
+         },
+         {
+            "id":"40",
+            "firstName":"M",
+            "lastName":"Dokolwane",
+            "phoneNumber":" 0731803893",
+            "emailAddress":"info@moseskotane.gov.za",
+            "wardNumber":"122",
+            "Province":"North West",
+            "Physical Address": "Mamusa, North West, South Africa"
+         },
+         {
+            "id":"41",
+            "firstName":"Galekile",
+            "lastName":"Moses",
+            "phoneNumber":" 073 038 4690",
+            "emailAddress":"freestate@joburg.org.za",
+            "wardNumber":"46",
+            "Province":"Free State",
+            "Physical Address": "Kopanong, Free State, South Africa"
+         },
+         {
+            "id":"42",
+            "firstName":"Tebogo",
+            "lastName":"Benny",
+            "phoneNumber":" 0827717184",
+            "emailAddress":"tebogo.jacobs@vodamail.co.za",
+            "wardNumber":"2",
+            "Province":"Free State",
+            "Physical Address": "Mafube, Free State, South Africa"
+         },
+         {
+            "id":"43",
+            "firstName":"Molefi",
+            "lastName":"Leonard",
+            "phoneNumber":" 078 369 0541",
+            "emailAddress":"Leonard.mathobisa@gmail.com",
+            "wardNumber":"43",
+            "Province":"Free State",
+            "Physical Address": "Mangaung, Free State, South Africa"
+         },
+         {
+            "id":"44",
+            "firstName":"Agnes",
+            "lastName":"Ntsoaki",
+            "phoneNumber":"082 821 9306",
+            "emailAddress":"N.A.phupha@mangaung.co.za ",
+            "wardNumber":"17",
+            "Province":"Free State",
+            "Physical Address": "Tokologo, Free State, South Africa"
+         },
+         {
+            "id":"45",
+            "firstName":"Erica",
+            "lastName":"Dikeledi",
+            "phoneNumber":" 084 726 5094 ",
+            "emailAddress":"Erica.dikeledi@yahoo.com ",
+            "wardNumber":"45",
+            "Province":"Free State",
+            "Physical Address": "Nala, Free State, South Africa"
+         },
+         {
+            "id":"46",
+            "firstName":"William",
+            "lastName":"Vernon",
+            "phoneNumber":"083 986 7789",
+            "emailAddress":"vernon72@gmail.com",
+            "wardNumber":"47",
+            "Province":"Free State",
+            "Physical Address": "Dihlabeng, Free State, South Africa"
+         },
+         {
+            "id":"47",
+            "firstName":"Phillip",
+            "lastName":"Fusi",
+            "phoneNumber":"071 805 1507",
+            "emailAddress":"example@freestate.org.za",
+            "wardNumber":"13",
+            "Province":"Free State",
+            "Physical Address": "Mohokare, Free State, South Africa"
+         },
+         {
+            "id":"48",
+            "firstName":"Christine",
+            "lastName":"Unknown",
+            "phoneNumber":" 0739819614",
+            "emailAddress":"example@freestate.org.za",
+            "wardNumber":"2",
+            "Province":"Free State",
+            "Physical Address": "Naledi, Free State, South Africa"
+         },
+         {
+            "id":"49",
+            "firstName":"Solomon",
+            "lastName":"Sephetho",
+            "phoneNumber":" 073 165 0899",
+            "emailAddress":"example@freestate.org.za",
+            "wardNumber":"1",
+            "Province":"Free State",
+            "Physical Address": "Nketoana, Free State, South Africa"
+         },
+         {
+            "id":"50",
+            "firstName":"Julias",
+            "lastName":"Tshokolo",
+            "phoneNumber":" 073 374 2448",
+            "emailAddress":"example@freestate.org.za",
+            "wardNumber":"38",
+            "Province":"Free State",
+            "Physical Address": "Tswelopele, Free State, South Africa"
+         },
+         {
+            "id":"51",
+            "firstName":"Victor Settley",
+            "lastName":"Vaughan",
+            "phoneNumber":"071 854 0012",
+            "emailAddress":"vsettley@ncpg.gov.za",
+            "wardNumber":"1",
+            "Province":"Northern Cape",
+            "Physical Address": "Hantam Municipality, Northern Cape, South Africa"
+         },
+         {
+            "id":"52",
+            "firstName":"Otsile Gregory",
+            "lastName":"Selao",
+            "phoneNumber":"071 234 5678",
+            "emailAddress":"blackbixy.kay@gmail.com",
+            "wardNumber":"4",
+            "Province":"Northern Cape",
+            "Physical Address": "Kuruman, Northern Cape, South Africa"
+         },
+         {
+            "id":"53",
+            "firstName":"Fatima Felicity",
+            "lastName":"Matsio",
+            "phoneNumber":"079 162 0173",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"5",
+            "Province":"Northern Cape",
+            "Physical Address": "Kakamas, Northern Cape, South Africa"
+         },
+         {
+            "id":"54",
+            "firstName":"Maria Kedibonye",
+            "lastName":"Mothibi",
+            "phoneNumber":"083 620 6241",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"6",
+            "Province":"Northern Cape",
+            "Physical Address": "Garies, Northern Cape, South Africa"
+         },
+         {
+            "id":"55",
+            "firstName":"Ronney Tsholohelo",
+            "lastName":"Morwe",
+            "phoneNumber":"076 811 9767",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"7",
+            "Province":"Northern Cape",
+            "Physical Address": "Pofadder, Northern Cape, South Africa"
+         },
+         {
+            "id":"56",
+            "firstName":"Tshabalala Charles",
+            "lastName":"Ngoma",
+            "phoneNumber":"072 219 1135",
+            "emailAddress":"cngoma12@gmail.com",
+            "wardNumber":"8",
+            "Province":"Northern Cape",
+            "Physical Address": "Springbok, Northern Cape, South Africa"
+         },
+         {
+            "id":"57",
+            "firstName":"Dimakatso Susan",
+            "lastName":"Chinkuli",
+            "phoneNumber":"073 723 3534",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"9",
+            "Province":"Northern Cape",
+            "Physical Address": "Mier, Northern Cape, South Africa"
+         },
+         {
+            "id":"58",
+            "firstName":"Elizabeth",
+            "lastName":"Tsimakwane",
+            "phoneNumber":"076 854 7817",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"10",
+            "Province":"Northern Cape",
+            "Physical Address": "Upington, Northern Cape, South Africa"
+         },
+         {
+            "id":"59",
+            "firstName":"Mike Pula",
+            "lastName":"Thabane",
+            "phoneNumber":"078 670 3034",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"11",
+            "Province":"Northern Cape",
+            "Physical Address": "Kimberly, Northern Cape, South Africa"
+         },
+         {
+            "id":"60",
+            "firstName":"Keamogetse Michael",
+            "lastName":"Tong",
+            "phoneNumber":"079 675 0607",
+            "emailAddress":"example@northerncape.org.za",
+            "wardNumber":"12",
+            "Province":"Northern Cape",
+            "Physical Address": "Kathu, Northern Cape, South Africa"
+         },
+         {
+            "id":"61",
+            "firstName":"Madayisi Bility",
+            "lastName":"Mokoena",
+            "phoneNumber":"076 873 8321",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"1",
+            "Province":"Mpumalanga",
+            "Physical Address": "Bushbuckridge, Mpumalanga, South Africa"
+         },
+         {
+            "id":"62",
+            "firstName":"Mandla Jeffrey",
+            "lastName":"Msibi",
+            "phoneNumber":" 073 374 2448",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"2",
+            "Province":"Mpumalanga",
+            "Physical Address": "Witbank, Mpumalanga, South Africa"
+         },
+         {
+            "id":"63",
+            "firstName":"Monica Zodwa",
+            "lastName":"Malomane",
+            "phoneNumber":"072 746 7248",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"3",
+            "Province":"Mpumalanga",
+            "Physical Address": "Nelspruit, Mpumalanga, South Africa"
+         },
+         {
+            "id":"64",
+            "firstName":"Elizabeth Maziya",
+            "lastName":"Khulumile",
+            "phoneNumber":"072 711 8462",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"4",
+            "Province":"Mpumalanga",
+            "Physical Address": "Piet Retief, Mpumalanga, South Africa"
+         },
+         {
+            "id":"65",
+            "firstName":"Thabiso David",
+            "lastName":"Tsela",
+            "phoneNumber":"078 804 8665",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"5",
+            "Province":"Mpumalanga",
+            "Physical Address": "Lydenburg, Mpumalanga, South Africa"
+         },
+         {
+            "id":"66",
+            "firstName":"Lucky",
+            "lastName":"Maseko",
+            "phoneNumber":"079 406 0309",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"7",
+            "Province":"Mpumalanga",
+            "Physical Address": "Middleburg, Mpumalanga, South Africa"
+         },
+         {
+            "id":"67",
+            "firstName":"Joseph Andries",
+            "lastName":"Mkhonto",
+            "phoneNumber":" 073 210 7947",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"8",
+            "Province":"Mpumalanga",
+            "Physical Address": "Ermelo, Mpumalanga, South Africa"
+         },
+         {
+            "id":"68",
+            "firstName":"Beatrice Antoinnete",
+            "lastName":"Nyundu",
+            "phoneNumber":"076 815 9135",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"9",
+            "Province":"Mpumalanga",
+            "Physical Address": "Delmas, Mpumalanga, South Africa"
+         },
+         {
+            "id":"69",
+            "firstName":"Mahlathini Samson ",
+            "lastName":"Mdluli",
+            "phoneNumber":"082 801 3684",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"10",
+            "Province":"Mpumalanga",
+            "Physical Address": "Standerton, Mpumalanga, South Africa"
+         },
+         {
+            "id":"70",
+            "firstName":"Eric Marubini",
+            "lastName":"Mutobvuey",
+            "phoneNumber":"082 709 3287",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"11",
+            "Province":"Mpumalanga",
+            "Physical Address": "Belfast, Mpumalanga, South Africa"
+         },
+         {
+            "id":"71",
+            "firstName":"Robert Blessing",
+            "lastName":"Dhlamini",
+            "phoneNumber":" 073 374 2448",
+            "emailAddress":"example@mpumalanga.org.za",
+            "wardNumber":"2",
+            "Province":"Mpumalanga",
+            "Physical Address": "Lekwa Local Municipality, Mpumalanga, South Africa"
+         }
+      ]
+   }
+}
