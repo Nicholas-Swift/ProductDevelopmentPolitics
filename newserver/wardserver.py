@@ -1,4 +1,5 @@
 import json
+import math
 
 import pymongo
 from pymongo import MongoClient
@@ -43,8 +44,26 @@ app = Flask(__name__)
 # INDEX WARDS
 @app.route('/wards', methods=['GET'])
 def indexWards():
-	return_dict = {}
 
+	# my_args = request.args
+	# if 'province' in my_args.keys():
+	# 	return_dict = {}
+	# 	return_dict['status'] = 'Successfully index wards'
+
+	# 	addr = request.args.get('province')
+
+	# 	return_wards = []
+	# 	wards = dbHelper.index_wards()
+	# 	for i in range(0, len(wards)):
+	# 		if 
+	# 	for i in range(0, len(return_wards)):
+	# 		return_wards[i]['_id'] = str(return_wards[i]['_id'])
+
+	# 	return_dict['message'] = return_wards
+
+	# 	return flask.jsonify(return_dict)
+	# else:
+	return_dict = {}
 	return_dict['status'] = 'Successfully index wards'
 
 	wards = dbHelper.index_wards()
